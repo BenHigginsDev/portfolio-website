@@ -303,13 +303,10 @@ nav {
 
 /* Project page content formatting */
 
-.project-screenshot {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Matches your home page project card style */
-  margin-top: 15px; /* Adds a bit of breathing room below the 'Screenshots' header */
+.project-page-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* Contact page formatting */
