@@ -41,22 +41,20 @@
     <h1>Social Links</h1>
     <hr class="form-divider">
     <div class="social-links">
-      <a href="https://linkedin.com/in/benhigginsuk" class="contact-link" target="_blank" rel="noopener">
+      <a href="https://linkedin.com/in/benhigginsuk" class="contact-link" target="_blank" rel="noopener noreferrer">
         <ion-icon name="logo-linkedin"></ion-icon> LinkedIn
       </a>
-      <a href="https://github.com/BenHigginsDev" class="contact-link" target="_blank" rel="noopener">
+      <a href="https://github.com/BenHigginsDev" class="contact-link" target="_blank" rel="noopener noreferrer">
         <ion-icon name="logo-github"></ion-icon> GitHub
       </a>
     </div>
 
-    
     <h1>Contact Me</h1>
     <hr class="form-divider">
 
     <!-- The Contact Form -->
     <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
       
-      <!-- Don't worry about this, nothing to see here -->
       <input type="hidden" name="access_key" value="86c2951f-3c44-461e-b7a3-6619dfb24547">
       
       <!-- Redirects to custom success page after sending -->
@@ -77,12 +75,15 @@
         <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
       </div>
 
-      <!-- Honey-pot spam protection field (hidden from human users) -->
-      <input type="checkbox" name="botcheck" class="hidden-spam-field" style="display: none;">
+      <!-- hCaptcha Widget -->
+      <div class="h-captcha" data-captcha="true"></div>
 
       <button type="submit" class="submit-btn">Send Message</button>
     </form>
 </main>
+
+<!-- Web3Forms hCaptcha Client Script -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
 
 
 <!-- 
